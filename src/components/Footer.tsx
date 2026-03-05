@@ -1,4 +1,5 @@
 import { Facebook, Mail, Phone } from "lucide-react";
+import logoImg from "@/assets/logo.png";
 
 const quickLinks = ["Home", "Services", "Process", "Clients", "About", "Contact"];
 
@@ -13,9 +14,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Company */}
           <div>
-            <h3 className="text-xl font-bold mb-2">
-              NextGen <span className="text-gradient">HQ Tech</span>
-            </h3>
+            <img src={logoImg} alt="NextGen HQ Tech" className="h-12 w-auto mb-2" />
             <p className="text-muted-foreground text-sm leading-relaxed">
               A premier B2B growth agency delivering high-performance lead generation, cold calling, 
               and outbound sales solutions to businesses worldwide.
