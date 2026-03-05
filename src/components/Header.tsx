@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
@@ -8,16 +8,20 @@ const navItems = ["Home", "Services", "Process", "Clients", "About", "Contact"];
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const scrollTo = (id: string) => {
-    document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
-  };
+  const scrollTo = useCallback((id: string) => {
+    setOpen(false);
+    setTimeout(() => {
+      document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
+    }, 150);
+  }, []);
 
   return (
     <header
@@ -28,7 +32,7 @@ export function Header() {
       <div className="container mx-auto flex items-center justify-between py-3 px-4 md:px-6">
         {/* Left: Menu + Logo + Text */}
         <div className="flex items-center gap-2 md:gap-3">
-          <Sheet>
+          <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="h-9 w-9 text-foreground/80 hover:text-primary hover:bg-primary/10 rounded-md">
                 <Menu className="h-5 w-5" />
