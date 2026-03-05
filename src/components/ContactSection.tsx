@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -97,6 +98,15 @@ export function ContactSection() {
                 icon: Phone,
                 title: "WhatsApp",
                 content: <a href="https://wa.me/8801633048134" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-primary transition-colors">+880 1633-048134</a>,
+              },
+              {
+                icon: Facebook,
+                title: "Follow Us",
+                content: (
+                  <a href="https://www.facebook.com/nextgenhqtech" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                    facebook.com/nextgenhqtech
+                  </a>
+                ),
               },
               {
                 icon: MapPin,
