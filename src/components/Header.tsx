@@ -55,6 +55,14 @@ export function Header() {
           </Sheet>
 
           <img src={logo} alt="NextGen HQ Tech" className="h-10 md:h-12 w-auto" />
+          <div className="flex flex-col">
+            <span className="text-lg md:text-xl font-bold tracking-tight text-foreground">
+              NextGen <span className="text-gradient">HQ Tech</span>
+            </span>
+            <span className="text-[10px] md:text-xs text-muted-foreground -mt-0.5">
+              Powering Business Growth Worldwide
+            </span>
+          </div>
         </div>
 
         {/* Right: Desktop nav */}
