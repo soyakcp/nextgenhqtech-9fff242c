@@ -95,8 +95,8 @@ export function ContactSection() {
               },
               {
                 icon: Phone,
-                title: "Call Us",
-                content: <p className="text-muted-foreground text-sm">+1 (555) 123-4567</p>,
+                title: "WhatsApp",
+                content: <a href="https://wa.me/8801633048134" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-primary transition-colors">+880 1633-048134</a>,
               },
               {
                 icon: MapPin,

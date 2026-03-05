@@ -26,7 +26,7 @@ export function Footer() {
             </p>
             <div className="flex gap-2">
               {[
-                { icon: Facebook, href: "https://facebook.com/nextgenhqtech", label: "Facebook" },
+                { icon: Facebook, href: "https://www.facebook.com/nextgenhqtech", label: "Facebook" },
                 { icon: Mail, href: "mailto:nextgenhqtech@gmail.com", label: "Email" },
               ].map((social) => (
                 <a
@@ -89,7 +89,9 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <a href="https://wa.me/8801633048134" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  +880 1633-048134
+                </a>
               </div>
             </div>
           </div>
