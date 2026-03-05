@@ -25,13 +25,13 @@ export function Header() {
         scrolled ? "glass shadow-lg shadow-background/50" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-6">
-        {/* Left: Menu + Logo */}
-        <div className="flex items-center gap-4">
+      <div className="container mx-auto flex items-center justify-between py-3 px-4 md:px-6">
+        {/* Left: Menu + Logo + Text */}
+        <div className="flex items-center gap-2 md:gap-3">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="text-foreground hover:text-primary">
-                <Menu className="h-6 w-6" />
+              <Button variant="ghost" size="icon" className="h-9 w-9 text-foreground/80 hover:text-primary hover:bg-primary/10 rounded-md">
+                <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="bg-card border-border w-72">
@@ -54,13 +54,15 @@ export function Header() {
             </SheetContent>
           </Sheet>
 
-          <img src={logo} alt="NextGen HQ Tech" className="h-10 md:h-12 w-auto" />
-          <div className="flex flex-col">
-            <span className="text-lg md:text-xl font-bold tracking-tight text-foreground">
+          <div className="h-6 w-px bg-border/40 hidden sm:block" />
+
+          <img src={logo} alt="NextGen HQ Tech" className="h-9 md:h-11 w-auto" />
+          <div className="flex flex-col leading-none">
+            <span className="text-base md:text-lg font-bold tracking-tight text-foreground">
               NextGen <span className="text-gradient">HQ Tech</span>
             </span>
-            <span className="text-[10px] md:text-xs text-muted-foreground -mt-0.5">
-              Powering Business Growth Worldwide
+            <span className="text-[9px] md:text-[11px] text-muted-foreground/80 tracking-wide uppercase mt-0.5">
+              Powering Business Growth
             </span>
           </div>
         </div>
