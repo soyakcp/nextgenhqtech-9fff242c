@@ -14,12 +14,12 @@ function AnimatedCounter({ target, suffix, start }: { target: number; suffix: st
   useEffect(() => {
     if (!start) return;
     let frame: number;
-    const duration = 2000;
+    const duration = 2200;
     const startTime = performance.now();
 
     const animate = (now: number) => {
       const progress = Math.min((now - startTime) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
+      const eased = 1 - Math.pow(1 - progress, 4);
       setCount(Math.floor(eased * target));
       if (progress < 1) frame = requestAnimationFrame(animate);
     };
@@ -29,7 +29,7 @@ function AnimatedCounter({ target, suffix, start }: { target: number; suffix: st
   }, [start, target]);
 
   return (
-    <span className="text-4xl md:text-5xl font-bold text-gradient">
+    <span className="text-5xl md:text-6xl font-heading font-bold text-gradient">
       {count}{suffix}
     </span>
   );
@@ -41,12 +41,17 @@ export function StatsSection() {
   return (
     <section className="py-20 relative" ref={ref}>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="glass-card rounded-2xl p-10 md:p-16">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+        <div className="glass-card-static rounded-3xl p-12 md:p-20 relative overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute inset-0 gradient-mesh opacity-50" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[80px]" />
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-purple-accent/5 rounded-full blur-[60px]" />
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center relative z-10">
             {stats.map((stat) => (
-              <div key={stat.label}>
+              <div key={stat.label} className="space-y-2">
                 <AnimatedCounter target={stat.value} suffix={stat.suffix} start={isInView} />
-                <p className="text-muted-foreground text-sm mt-2 font-medium">{stat.label}</p>
+                <p className="text-muted-foreground text-sm font-medium tracking-wide">{stat.label}</p>
               </div>
             ))}
           </div>

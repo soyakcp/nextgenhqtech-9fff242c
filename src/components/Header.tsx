@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
@@ -25,32 +25,45 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass shadow-lg shadow-background/50" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? "glass shadow-lg shadow-background/60 py-2"
+          : "bg-transparent py-4"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between py-3 px-4 md:px-6">
+      <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
         {/* Left: Menu + Logo + Text */}
-        <div className="flex items-center gap-2 md:gap-3">
+        <div className="flex items-center gap-3">
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-9 w-9 text-foreground/80 hover:text-primary hover:bg-primary/10 rounded-md">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-10 w-10 text-foreground/70 hover:text-primary hover:bg-primary/10 rounded-xl transition-all duration-300"
+              >
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="bg-card border-border w-72">
+            <SheetContent side="left" className="bg-card/95 backdrop-blur-2xl border-border/50 w-80">
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-              <div className="mt-8 flex flex-col gap-2">
-                <div className="mb-6 px-2">
-                  <h3 className="text-lg font-bold text-foreground">NextGen HQ Tech</h3>
-                  <p className="text-xs text-muted-foreground">Powering Business Growth</p>
+              <div className="mt-8 flex flex-col gap-1">
+                <div className="mb-8 px-3">
+                  <div className="flex items-center gap-3 mb-2">
+                    <img src={logo} alt="NextGen HQ Tech" className="h-10 w-auto" />
+                    <div>
+                      <h3 className="text-lg font-heading font-bold text-foreground">NextGen HQ Tech</h3>
+                      <p className="text-[10px] text-muted-foreground tracking-widest uppercase">Powering Business Growth</p>
+                    </div>
+                  </div>
+                  <div className="h-px bg-gradient-to-r from-primary/30 via-primary/10 to-transparent mt-4" />
                 </div>
-                {navItems.map((item) => (
+                {navItems.map((item, i) => (
                   <button
                     key={item}
                     onClick={() => scrollTo(item)}
-                    className="text-left px-4 py-3 rounded-lg text-foreground/80 hover:bg-secondary hover:text-primary transition-colors text-sm font-medium"
+                    className="text-left px-4 py-3.5 rounded-xl text-foreground/70 hover:bg-primary/8 hover:text-primary transition-all duration-300 text-sm font-medium tracking-wide group flex items-center gap-3"
                   >
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary/30 group-hover:bg-primary group-hover:shadow-[0_0_8px_hsl(199_89%_48%/0.5)] transition-all duration-300" />
                     {item}
                   </button>
                 ))}
@@ -58,26 +71,26 @@ export function Header() {
             </SheetContent>
           </Sheet>
 
-          <div className="h-6 w-px bg-border/40 hidden sm:block" />
+          <div className="h-7 w-px bg-border/30 hidden sm:block" />
 
           <img src={logo} alt="NextGen HQ Tech" className="h-9 md:h-11 w-auto" />
           <div className="flex flex-col leading-none">
-            <span className="text-base md:text-lg font-bold tracking-tight text-foreground">
+            <span className="text-base md:text-lg font-heading font-bold tracking-tight text-foreground">
               NextGen <span className="text-gradient">HQ Tech</span>
             </span>
-            <span className="text-[9px] md:text-[11px] text-muted-foreground/80 tracking-wide uppercase mt-0.5">
+            <span className="text-[9px] md:text-[10px] text-muted-foreground/70 tracking-[0.2em] uppercase mt-0.5">
               Powering Business Growth
             </span>
           </div>
         </div>
 
         {/* Right: Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-1">
           {navItems.map((item) => (
             <button
               key={item}
               onClick={() => scrollTo(item)}
-              className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium"
+              className="text-sm text-muted-foreground hover:text-foreground px-3 py-2 rounded-lg hover:bg-secondary/50 transition-all duration-300 font-medium"
             >
               {item}
             </button>
@@ -85,7 +98,7 @@ export function Header() {
           <Button
             size="sm"
             onClick={() => scrollTo("Contact")}
-            className="bg-primary text-primary-foreground hover:bg-primary/80 glow-cyan"
+            className="ml-2 bg-primary text-primary-foreground hover:bg-primary/80 glow-cyan rounded-xl font-semibold"
           >
             Get Started
           </Button>
