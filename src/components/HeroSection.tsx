@@ -9,6 +9,7 @@ const proofPoints = [
   "Elite Closers & Appointment Setters",
 ];
 
+
 export function HeroSection() {
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
