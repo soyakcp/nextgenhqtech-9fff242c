@@ -105,6 +105,10 @@ export function Footer() {
                   +880 1633-048134
                 </a>
               </div>
+              <div className="flex items-start gap-3 text-sm text-muted-foreground">
+                <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                <span>Nextgen HQ Tech, Nabinagar, Savar, Dhaka-1344, Bangladesh</span>
+              </div>
             </div>
           </div>
         </div>
