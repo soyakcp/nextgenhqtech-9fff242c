@@ -14,7 +14,7 @@ const services = [
   "Order Confirmation & RTO Reduction",
   "Pending Lead Conversion",
   "Cold Calling & Appointment Setting",
-  "Remote Sales Closers",
+  "Professional Sales Closers",
 ];
 
 export function Footer() {

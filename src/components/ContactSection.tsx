@@ -29,7 +29,7 @@ export function ContactSection() {
         <div className="text-center mb-20">
           <span className="section-badge">Start the Conversation</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-5">
-            Ready to Install a <span className="text-gradient">Remote Sales Force?</span>
+            Ready to Install a <span className="text-gradient">Professional Sales Force?</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
             Send us your offer, your lead source, and your growth target—we will show you where the missed revenue is hiding.
