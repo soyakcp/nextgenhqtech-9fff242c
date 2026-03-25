@@ -2,7 +2,7 @@ import { BriefcaseBusiness, CircleDollarSign, Users, Waves } from "lucide-react"
 import { useInView } from "@/hooks/useInView";
 
 const values = [
-  { icon: Users, title: "Dedicated Team", description: "I manage a specialized team of 3-5+ trained sales agents ready to represent your brand." },
+  { icon: Users, title: "Dedicated Team", description: "An expert team of trained sales agents ready to represent your brand with authority." },
   { icon: CircleDollarSign, title: "No Overheads", description: "No fixed salaries, no office overheads—just pure, measurable results tied to performance." },
   { icon: BriefcaseBusiness, title: "Brand Ownership", description: "We learn your product, offers, objections, and tone so every call feels native to your business." },
   { icon: Waves, title: "Conversion Pressure", description: "We hunt for conversions, handle follow-ups, and secure the cash with relentless consistency." },
@@ -22,10 +22,10 @@ export function AboutSection() {
               A Dedicated Sales Force Ready to <span className="text-gradient">Scale Your Brand</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-5">
-              I manage a specialized team of 3-5+ trained sales agents. We represent your brand, hunt for conversions, and secure the cash. No fixed salaries, no office overheads—just pure, measurable results.
+              We operate as your dedicated sales department. With our cutting-edge technology and elite sales agents, we double your revenue—without the burden of fixed salaries or office overheads.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Nextgen HQ Tech operates like a remote revenue unit—built for founders and operators who need sharper follow-up, stronger communication, and more closed deals without building an in-house call floor.
+              Nextgen HQ Tech is built for founders and operators who need sharper follow-up, stronger communication, and more closed deals without building an in-house call floor.
             </p>
           </div>
 

@@ -1,4 +1,4 @@
-import { Facebook, Mail, Phone } from "lucide-react";
+import { Facebook, Mail, MapPin, Phone } from "lucide-react";
 import logoImg from "@/assets/logo.png";
 
 const quickLinks = [
@@ -14,7 +14,7 @@ const services = [
   "Order Confirmation & RTO Reduction",
   "Pending Lead Conversion",
   "Cold Calling & Appointment Setting",
-  "Remote Sales Closers",
+  "Professional Sales Closers",
 ];
 
 export function Footer() {
@@ -34,7 +34,7 @@ export function Footer() {
               <span className="font-heading font-bold text-foreground text-lg">NextGen HQ Tech</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Nextgen HQ Tech: Premium Results-Driven Sales Agency. International Standards. Local Expertise.
+              Nextgen HQ Tech: Your Professional Sales Force. Premium Results-Driven Sales Agency. International Standards. Local Expertise.
             </p>
             <div className="flex gap-2">
               {[
@@ -104,6 +104,10 @@ export function Footer() {
                 <a href="https://wa.me/8801633048134" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                   +880 1633-048134
                 </a>
+              </div>
+              <div className="flex items-start gap-3 text-sm text-muted-foreground">
+                <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                <span>Nextgen HQ Tech, Nabinagar, Savar, Dhaka-1344, Bangladesh</span>
               </div>
             </div>
           </div>
