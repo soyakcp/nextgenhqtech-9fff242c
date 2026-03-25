@@ -4,7 +4,16 @@ import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 
-const navItems = ["Home", "Services", "Process", "Clients", "About", "Contact"];
+const navItems = [
+  { label: "Home", id: "home" },
+  { label: "Services", id: "services" },
+  { label: "Advantage", id: "about" },
+  { label: "Trust", id: "trust" },
+  { label: "Industries", id: "industries" },
+  { label: "Contact", id: "contact" },
+];
+
+const whatsappUrl = "https://wa.me/8801633048134";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +28,7 @@ export function Header() {
   const scrollTo = useCallback((id: string) => {
     setOpen(false);
     setTimeout(() => {
-      document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     }, 150);
   }, []);
 
@@ -57,14 +66,14 @@ export function Header() {
                   </div>
                   <div className="h-px bg-gradient-to-r from-primary/30 via-primary/10 to-transparent mt-4" />
                 </div>
-                {navItems.map((item, i) => (
+                 {navItems.map((item) => (
                   <button
-                    key={item}
-                    onClick={() => scrollTo(item)}
+                     key={item.id}
+                     onClick={() => scrollTo(item.id)}
                     className="text-left px-4 py-3.5 rounded-xl text-foreground/70 hover:bg-primary/8 hover:text-primary transition-all duration-300 text-sm font-medium tracking-wide group flex items-center gap-3"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/30 group-hover:bg-primary group-hover:shadow-[0_0_8px_hsl(199_89%_48%/0.5)] transition-all duration-300" />
-                    {item}
+                     {item.label}
                   </button>
                 ))}
               </div>
@@ -86,21 +95,21 @@ export function Header() {
 
         {/* Right: Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1">
-          {navItems.map((item) => (
+           {navItems.map((item) => (
             <button
-              key={item}
-              onClick={() => scrollTo(item)}
+               key={item.id}
+               onClick={() => scrollTo(item.id)}
               className="text-sm text-muted-foreground hover:text-foreground px-3 py-2 rounded-lg hover:bg-secondary/50 transition-all duration-300 font-medium"
             >
-              {item}
+               {item.label}
             </button>
           ))}
           <Button
             size="sm"
-            onClick={() => scrollTo("Contact")}
+             onClick={() => window.open(whatsappUrl, "_blank", "noopener,noreferrer")}
             className="ml-2 bg-primary text-primary-foreground hover:bg-primary/80 glow-cyan rounded-xl font-semibold"
           >
-            Get Started
+             Scale My Sales
           </Button>
         </nav>
       </div>

@@ -1,11 +1,11 @@
-import { Shield, Users, Zap, Globe } from "lucide-react";
+import { BriefcaseBusiness, CircleDollarSign, Users, Waves } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const values = [
-  { icon: Shield, title: "Reliability", description: "Consistent, high-quality service you can count on every day." },
-  { icon: Users, title: "Partnership", description: "We integrate seamlessly as an extension of your team." },
-  { icon: Zap, title: "Performance", description: "Data-driven strategies focused on measurable ROI." },
-  { icon: Globe, title: "Global Reach", description: "Serving businesses across USA, Canada, UK & Australia." },
+  { icon: Users, title: "Dedicated Team", description: "I manage a specialized team of 3-5+ trained sales agents ready to represent your brand." },
+  { icon: CircleDollarSign, title: "No Overheads", description: "No fixed salaries, no office overheads—just pure, measurable results tied to performance." },
+  { icon: BriefcaseBusiness, title: "Brand Ownership", description: "We learn your product, offers, objections, and tone so every call feels native to your business." },
+  { icon: Waves, title: "Conversion Pressure", description: "We hunt for conversions, handle follow-ups, and secure the cash with relentless consistency." },
 ];
 
 export function AboutSection() {
@@ -17,19 +17,15 @@ export function AboutSection() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div className={isInView ? "animate-fade-up" : "opacity-0"}>
-            <span className="section-badge">About Us</span>
+            <span className="section-badge">Agency Advantage</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-7">
-              Your Growth <span className="text-gradient">Partner</span>
+              A Dedicated Sales Force Ready to <span className="text-gradient">Scale Your Brand</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-5">
-              NextGen HQ Tech is a premier B2B growth agency specializing in lead generation,
-              cold calling, and outbound sales. We combine cutting-edge technology with expert
-              human talent to deliver campaigns that convert.
+              I manage a specialized team of 3-5+ trained sales agents. We represent your brand, hunt for conversions, and secure the cash. No fixed salaries, no office overheads—just pure, measurable results.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              With a global team serving clients across the USA, Canada, United Kingdom, and
-              Australia, we understand diverse markets and bring tailored strategies to every
-              engagement. Our mission is simple: accelerate your revenue growth.
+              Nextgen HQ Tech operates like a remote revenue unit—built for founders and operators who need sharper follow-up, stronger communication, and more closed deals without building an in-house call floor.
             </p>
           </div>
 

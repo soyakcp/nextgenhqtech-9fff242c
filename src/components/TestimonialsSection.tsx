@@ -3,39 +3,39 @@ import { useInView } from "@/hooks/useInView";
 
 const testimonials = [
   {
-    name: "Michael Roberts",
-    company: "TechBridge Solutions",
-    flag: "🇺🇸",
-    country: "USA",
-    review: "NextGen HQ Tech transformed our outbound strategy. We saw a 3x increase in qualified leads within the first quarter. Their cold calling team is exceptional.",
+    name: "Kamrul Hasan",
+    company: "Dhaka Style Mart",
+    flag: "🇧🇩",
+    country: "Bangladesh",
+    review: "Nextgen HQ Tech helped us confirm more COD orders and cut down fake bookings fast. Their agents speak with confidence and close with discipline.",
   },
   {
-    name: "Sarah Thompson",
-    company: "GrowthPeak Marketing",
-    flag: "🇬🇧",
-    country: "UK",
-    review: "The professionalism and consistency of their lead generation campaigns exceeded our expectations. They became a true extension of our sales team.",
+    name: "Sifat Ahmed",
+    company: "Urban Cart BD",
+    flag: "🇧🇩",
+    country: "Bangladesh",
+    review: "Our pending Facebook and WhatsApp leads were sitting cold. Their team followed up properly and turned that pipeline into confirmed orders within days.",
   },
   {
-    name: "James Mitchell",
-    company: "Pinnacle Enterprises",
-    flag: "🇨🇦",
-    country: "Canada",
-    review: "Outstanding customer support and email marketing services. Our engagement rates doubled, and their team is always responsive and proactive.",
+    name: "Nusrat Jahan",
+    company: "Nexa Cosmetics",
+    flag: "🇧🇩",
+    country: "Bangladesh",
+    review: "What impressed me most was the transparency. We received daily sheet updates, clear call records, and genuine sales performance—not agency talk.",
   },
   {
-    name: "Emma Wilson",
-    company: "Atlas Digital Group",
-    flag: "🇦🇺",
-    country: "Australia",
-    review: "We partnered with NextGen HQ Tech for outbound sales and the ROI has been incredible. Their data-driven approach sets them apart from other agencies.",
+    name: "Tanvir Hossain",
+    company: "Prime Property Link",
+    flag: "🇧🇩",
+    country: "Bangladesh",
+    review: "For appointment setting, they brought serious energy. The conversations were sharper, follow-ups were faster, and my calendar stayed full with quality prospects.",
   },
   {
-    name: "David Chen",
-    company: "NovaTech Industries",
-    flag: "🇺🇸",
-    country: "USA",
-    review: "From strategy to execution, their process is seamless. They delivered over 500 qualified appointments in just 6 months. Highly recommended.",
+    name: "Farzana Akter",
+    company: "Royal Home Essentials",
+    flag: "🇧🇩",
+    country: "Bangladesh",
+    review: "Their no sale, no pay model gave us confidence to start. They reduced returns, improved confirmation quality, and treated our brand like their own sales desk.",
   },
 ];
 
@@ -43,16 +43,16 @@ export function TestimonialsSection() {
   const { ref, isInView } = useInView();
 
   return (
-    <section id="clients" className="py-28 relative" ref={ref}>
+    <section id="testimonials" className="py-28 relative" ref={ref}>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(260_60%_55%_/_0.03)_0%,_transparent_60%)]" />
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-20">
-          <span className="section-badge">Client Testimonials</span>
+          <span className="section-badge">Testimonials</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-5">
-            What Our <span className="text-gradient">Clients Say</span>
+            Bangladesh Brands Trust Our <span className="text-gradient">Closing Discipline</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-            Don't just take our word for it — hear from the businesses we've helped grow.
+            Real praise from businesses that needed faster follow-up, cleaner confirmations, and more revenue from the same lead flow.
           </p>
         </div>
 
