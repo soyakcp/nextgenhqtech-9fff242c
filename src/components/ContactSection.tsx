@@ -27,12 +27,12 @@ export function ContactSection() {
       <div className="absolute inset-0 gradient-mesh" />
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-20">
-          <span className="section-badge">Contact Us</span>
+          <span className="section-badge">Start the Conversation</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-5">
-            Let's <span className="text-gradient">Get Started</span>
+            Ready to Install a <span className="text-gradient">Remote Sales Force?</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-            Ready to scale your business? Book a free consultation today.
+            Send us your offer, your lead source, and your growth target—we will show you where the missed revenue is hiding.
           </p>
         </div>
 
@@ -128,7 +128,7 @@ export function ContactSection() {
             <div className="mt-4 p-6 rounded-2xl glass-card-static">
               <p className="text-sm text-foreground font-medium mb-2">Ready to grow?</p>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                Schedule a free strategy call and discover how we can scale your lead generation by 3x.
+                Let&apos;s map out a sharper sales process with premium communication, transparent reporting, and a no sale, no pay mindset.
               </p>
             </div>
           </div>

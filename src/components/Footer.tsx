@@ -1,12 +1,25 @@
-import { Facebook, Mail, Phone, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Mail, Phone } from "lucide-react";
 import logoImg from "@/assets/logo.png";
 
-const quickLinks = ["Home", "Services", "Process", "Clients", "About", "Contact"];
-const services = ["Cold Calling", "Lead Generation", "Outbound Sales", "Customer Support", "Email Marketing", "Web Development"];
+const quickLinks = [
+  { label: "Home", id: "home" },
+  { label: "Services", id: "services" },
+  { label: "Agency Advantage", id: "about" },
+  { label: "Trust", id: "trust" },
+  { label: "Industries", id: "industries" },
+  { label: "Contact", id: "contact" },
+];
+
+const services = [
+  "Order Confirmation & RTO Reduction",
+  "Pending Lead Conversion",
+  "Cold Calling & Appointment Setting",
+  "Remote Sales Closers",
+];
 
 export function Footer() {
   const scrollTo = (id: string) => {
-    document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -21,8 +34,7 @@ export function Footer() {
               <span className="font-heading font-bold text-foreground text-lg">NextGen HQ Tech</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              A premier B2B growth agency delivering high-performance lead generation, cold calling,
-              and outbound sales solutions to businesses worldwide.
+              Nextgen HQ Tech: Premium Results-Driven Sales Agency. International Standards. Local Expertise.
             </p>
             <div className="flex gap-2">
               {[
@@ -48,12 +60,12 @@ export function Footer() {
             <h4 className="font-heading font-semibold text-foreground mb-5 text-sm tracking-wide">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
-                <li key={link}>
+                <li key={link.id}>
                   <button
-                    onClick={() => scrollTo(link)}
+                    onClick={() => scrollTo(link.id)}
                     className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
                   >
-                    {link}
+                    {link.label}
                   </button>
                 </li>
               ))}
@@ -102,7 +114,7 @@ export function Footer() {
             © {new Date().getFullYear()} NextGen HQ Tech. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground/40">
-            Powering Business Growth Worldwide
+            Premium Results-Driven Sales Agency
           </p>
         </div>
       </div>

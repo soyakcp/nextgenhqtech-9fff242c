@@ -2,10 +2,10 @@ import { useInView } from "@/hooks/useInView";
 import { useEffect, useState } from "react";
 
 const stats = [
-  { value: 250, suffix: "+", label: "Clients Served" },
-  { value: 98, suffix: "%", label: "Client Satisfaction" },
-  { value: 24, suffix: "/7", label: "Support Available" },
-  { value: 15, suffix: "+", label: "Countries Covered" },
+  { value: 0, suffix: "", label: "Fixed Salaries" },
+  { value: 100, suffix: "%", label: "Call Transparency" },
+  { value: 5, suffix: "+", label: "Trained Sales Agents" },
+  { value: 1, suffix: "x", label: "Daily Reporting Rhythm" },
 ];
 
 function AnimatedCounter({ target, suffix, start }: { target: number; suffix: string; start: boolean }) {
@@ -42,10 +42,19 @@ export function StatsSection() {
     <section className="py-20 relative" ref={ref}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="glass-card-static rounded-3xl p-12 md:p-20 relative overflow-hidden">
-          {/* Background decoration */}
           <div className="absolute inset-0 gradient-mesh opacity-50" />
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[80px]" />
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-purple-accent/5 rounded-full blur-[60px]" />
+
+          <div className="relative z-10 text-center mb-12">
+            <span className="section-badge">Performance Model</span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Aggressive Execution. <span className="text-gradient">Measured Daily.</span>
+            </h2>
+            <p className="max-w-3xl mx-auto text-muted-foreground text-lg leading-relaxed">
+              Nextgen HQ Tech is engineered for operators who want closers, proof, and accountability—not bloated agency retainers.
+            </p>
+          </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center relative z-10">
             {stats.map((stat) => (
