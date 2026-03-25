@@ -1,4 +1,4 @@
-import { Facebook, Mail, Phone } from "lucide-react";
+import { Facebook, Mail, MapPin, Phone } from "lucide-react";
 import logoImg from "@/assets/logo.png";
 
 const quickLinks = [
