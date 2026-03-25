@@ -22,10 +22,10 @@ export function AboutSection() {
               A Dedicated Sales Force Ready to <span className="text-gradient">Scale Your Brand</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-5">
-              I manage a specialized team of 3-5+ trained sales agents. We represent your brand, hunt for conversions, and secure the cash. No fixed salaries, no office overheads—just pure, measurable results.
+              We operate as your dedicated sales department. With our cutting-edge technology and elite sales agents, we double your revenue—without the burden of fixed salaries or office overheads.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Nextgen HQ Tech operates like a remote revenue unit—built for founders and operators who need sharper follow-up, stronger communication, and more closed deals without building an in-house call floor.
+              Nextgen HQ Tech is built for founders and operators who need sharper follow-up, stronger communication, and more closed deals without building an in-house call floor.
             </p>
           </div>
 

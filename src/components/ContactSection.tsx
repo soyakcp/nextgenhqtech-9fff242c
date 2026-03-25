@@ -110,8 +110,8 @@ export function ContactSection() {
               },
               {
                 icon: MapPin,
-                title: "Global Coverage",
-                content: <p className="text-muted-foreground text-sm">USA · Canada · UK · Australia</p>,
+                title: "Our Location",
+                content: <p className="text-muted-foreground text-sm">Nextgen HQ Tech, Nabinagar, Savar, Dhaka-1344, Bangladesh</p>,
               },
             ].map((item) => (
               <div key={item.title} className="flex items-start gap-4 group">

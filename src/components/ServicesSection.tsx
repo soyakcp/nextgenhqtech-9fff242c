@@ -22,7 +22,7 @@ const services = [
   },
   {
     icon: ShoppingBag,
-    title: "Remote Sales Closers On Demand",
+    title: "Professional Sales Closers On Demand",
     description: "A premium closing desk for brands that need fast follow-ups, disciplined communication, and serious revenue recovery without fixed overhead.",
     gradient: "from-primary/20 to-primary/5",
   },

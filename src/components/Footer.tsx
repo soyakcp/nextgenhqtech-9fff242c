@@ -34,7 +34,7 @@ export function Footer() {
               <span className="font-heading font-bold text-foreground text-lg">NextGen HQ Tech</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Nextgen HQ Tech: Premium Results-Driven Sales Agency. International Standards. Local Expertise.
+              Nextgen HQ Tech: Your Professional Sales Force. Premium Results-Driven Sales Agency. International Standards. Local Expertise.
             </p>
             <div className="flex gap-2">
               {[
