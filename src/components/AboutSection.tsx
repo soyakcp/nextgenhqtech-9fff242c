@@ -2,7 +2,7 @@ import { BriefcaseBusiness, CircleDollarSign, Users, Waves } from "lucide-react"
 import { useInView } from "@/hooks/useInView";
 
 const values = [
-  { icon: Users, title: "Dedicated Team", description: "I manage a specialized team of 3-5+ trained sales agents ready to represent your brand." },
+  { icon: Users, title: "Dedicated Team", description: "An expert team of trained sales agents ready to represent your brand with authority." },
   { icon: CircleDollarSign, title: "No Overheads", description: "No fixed salaries, no office overheads—just pure, measurable results tied to performance." },
   { icon: BriefcaseBusiness, title: "Brand Ownership", description: "We learn your product, offers, objections, and tone so every call feels native to your business." },
   { icon: Waves, title: "Conversion Pressure", description: "We hunt for conversions, handle follow-ups, and secure the cash with relentless consistency." },
