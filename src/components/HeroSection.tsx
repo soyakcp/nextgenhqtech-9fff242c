@@ -1,14 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, ShieldCheck, TrendingUp, Zap } from "lucide-react";
+import { ArrowRight, Play, ShieldCheck, TrendingUp, Database } from "lucide-react";
 
 const whatsappUrl = "https://wa.me/8801633048134";
 
 const proofPoints = [
   "No Sale, No Pay",
-  "Bangladesh E-commerce Specialists",
-  "Elite Closers & Appointment Setters",
+  "100% Data Accuracy",
+  "Result-Driven BPO Partner",
 ];
-
 
 export function HeroSection() {
   const scrollTo = (id: string) => {
@@ -28,7 +27,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 md:px-6 pt-28 pb-20 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="animate-fade-up mb-6">
-            <span className="section-badge">Your Professional Sales Force</span>
+            <span className="section-badge">Your Trusted BPO Partner</span>
           </div>
 
           <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-end">
@@ -41,14 +40,16 @@ export function HeroSection() {
                 ))}
               </div>
 
-              <h1 className="animate-fade-up animate-fade-up-delay-1 text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] font-heading font-bold leading-[0.95] tracking-tight mb-8 max-w-5xl">
-                We Don&apos;t Just Call.
+              <h1 className="animate-fade-up animate-fade-up-delay-1 text-4xl md:text-5xl lg:text-6xl xl:text-[4.5rem] font-heading font-bold leading-[0.95] tracking-tight mb-8 max-w-5xl">
+                Expert Sales Closing &
                 <br />
-                <span className="text-gradient">We Close.</span>
+                <span className="text-gradient">Data Verification Solutions</span>
+                <br />
+                <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-medium">for Your Business.</span>
               </h1>
 
               <p className="animate-fade-up animate-fade-up-delay-2 text-lg md:text-xl text-muted-foreground max-w-3xl mb-10 leading-relaxed">
-                Stop losing revenue to pending leads. Our professional team of sales experts handles your Cold Calling, Lead Nurturing, and Sales Closing—Risk-Free with our unique &apos;No Sale, No Pay&apos; performance model.
+                Boost revenue with our result-oriented external sales team, and ensure campaign success with our professional data verification and integrity services.
               </p>
 
               <div className="animate-fade-up animate-fade-up-delay-3 flex flex-col sm:flex-row gap-4">
@@ -57,7 +58,7 @@ export function HeroSection() {
                   onClick={() => window.open(whatsappUrl, "_blank", "noopener,noreferrer")}
                   className="bg-primary text-primary-foreground hover:bg-primary/80 glow-cyan text-base px-10 py-7 rounded-xl font-semibold tracking-wide"
                 >
-                  Scale My Sales Now
+                  Get a Free Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button
@@ -77,28 +78,28 @@ export function HeroSection() {
                 <div className="absolute inset-0 bg-[linear-gradient(135deg,_hsl(199_89%_48%_/_0.08),_transparent_45%,_hsl(260_60%_55%_/_0.08))]" />
                 <div className="relative z-10 space-y-6">
                   <div>
-                    <p className="text-xs uppercase tracking-[0.3em] text-primary font-semibold mb-3">The Closing Engine</p>
+                    <p className="text-xs uppercase tracking-[0.3em] text-primary font-semibold mb-3">Business Solutions</p>
                     <h2 className="text-2xl md:text-3xl font-heading font-bold leading-tight text-foreground">
-                      Elite sales closers dedicated to growing your business through high-impact communication.
+                      Two powerful services engineered to grow your revenue and protect your data.
                     </h2>
                   </div>
 
                   <div className="space-y-4">
                     {[
                       {
-                        icon: ShieldCheck,
-                        title: "Risk Reversed",
-                        text: "You pay on delivered results—not on empty promises, salaries, or idle hours.",
-                      },
-                      {
                         icon: TrendingUp,
-                        title: "Revenue First",
-                        text: "We chase pending leads, revive silent prospects, and close sales with urgency.",
+                        title: "Sales Closing",
+                        text: "Convert pending leads into confirmed orders with our performance-based sales team.",
                       },
                       {
-                        icon: Zap,
-                        title: "Operator Mindset",
-                        text: "Scripts, follow-ups, recordings, and daily reporting built for speed and accountability.",
+                        icon: Database,
+                        title: "Data Verification",
+                        text: "Ensure 100% accuracy in campaign data—remove fakes, duplicates, and errors.",
+                      },
+                      {
+                        icon: ShieldCheck,
+                        title: "Zero Risk Model",
+                        text: "No Sale, No Pay. Full transparency with real-time reporting and accountability.",
                       },
                     ].map((item) => (
                       <div key={item.title} className="flex gap-4 rounded-2xl border border-border/30 bg-secondary/30 p-4">
@@ -120,9 +121,9 @@ export function HeroSection() {
           <div className="animate-fade-up animate-fade-up-delay-5 mt-16 pt-8 border-t border-border/20">
             <div className="grid md:grid-cols-3 gap-4">
               {[
-                "Cold Calling that creates urgency and authority",
-                "Lead Nurturing that recovers stalled conversations",
-                "Sales Closing built around a No Sale, No Pay model",
+                "E-commerce Sales Closing with No Sale, No Pay model",
+                "Campaign Data Verification for FMCG & Field Agencies",
+                "Real-time Reporting & Complete Operational Transparency",
               ].map((item) => (
                 <div key={item} className="rounded-2xl border border-border/30 bg-secondary/20 px-5 py-4 text-sm text-foreground/80">
                   {item}

@@ -7,35 +7,35 @@ const testimonials = [
     company: "Dhaka Style Mart",
     flag: "🇧🇩",
     country: "Bangladesh",
-    review: "Nextgen HQ Tech helped us confirm more COD orders and cut down fake bookings fast. Their agents speak with confidence and close with discipline.",
+    review: "NextGen HQ Tech transformed our pending leads into confirmed orders. Their sales closing team is professional, fast, and truly result-driven.",
   },
   {
     name: "Sifat Ahmed",
     company: "Urban Cart BD",
     flag: "🇧🇩",
     country: "Bangladesh",
-    review: "Our pending Facebook and WhatsApp leads were sitting cold. Their team followed up properly and turned that pipeline into confirmed orders within days.",
+    review: "We were losing revenue on unconfirmed orders. Their team recovered a significant portion of our pending pipeline within the first week.",
   },
   {
     name: "Nusrat Jahan",
     company: "Nexa Cosmetics",
     flag: "🇧🇩",
     country: "Bangladesh",
-    review: "What impressed me most was the transparency. We received daily sheet updates, clear call records, and genuine sales performance—not agency talk.",
+    review: "Their data verification service cleaned our entire field campaign database. Zero fake entries, detailed reports, and fast turnaround.",
   },
   {
     name: "Tanvir Hossain",
-    company: "Prime Property Link",
+    company: "Prime Activation Agency",
     flag: "🇧🇩",
     country: "Bangladesh",
-    review: "For appointment setting, they brought serious energy. The conversations were sharper, follow-ups were faster, and my calendar stayed full with quality prospects.",
+    review: "As a field activation agency, data accuracy is everything. NextGen verified thousands of entries for our tobacco campaign flawlessly.",
   },
   {
     name: "Farzana Akter",
     company: "Royal Home Essentials",
     flag: "🇧🇩",
     country: "Bangladesh",
-    review: "Their no sale, no pay model gave us confidence to start. They reduced returns, improved confirmation quality, and treated our brand like their own sales desk.",
+    review: "The No Sale, No Pay model gave us confidence. Their transparency with daily reports and call recordings sets them apart from others.",
   },
 ];
 
@@ -49,10 +49,10 @@ export function TestimonialsSection() {
         <div className="text-center mb-20">
           <span className="section-badge">Testimonials</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-5">
-            Bangladesh Brands Trust Our <span className="text-gradient">Closing Discipline</span>
+            Partners Trust Our <span className="text-gradient">Results & Integrity</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-            Real praise from businesses that needed faster follow-up, cleaner confirmations, and more revenue from the same lead flow.
+            Real feedback from businesses that rely on our sales closing and data verification expertise.
           </p>
         </div>
 
