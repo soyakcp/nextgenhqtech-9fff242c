@@ -7,8 +7,8 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 const navItems = [
   { label: "Home", id: "home" },
   { label: "Services", id: "services" },
-  { label: "Advantage", id: "about" },
-  { label: "Trust", id: "trust" },
+  { label: "Why Us", id: "about" },
+  { label: "Process", id: "process" },
   { label: "Industries", id: "industries" },
   { label: "Contact", id: "contact" },
 ];
@@ -41,7 +41,6 @@ export function Header() {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
-        {/* Left: Menu + Logo + Text */}
         <div className="flex items-center gap-3">
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
@@ -61,19 +60,19 @@ export function Header() {
                     <img src={logo} alt="NextGen HQ Tech" className="h-10 w-auto" />
                     <div>
                       <h3 className="text-lg font-heading font-bold text-foreground">NextGen HQ Tech</h3>
-                      <p className="text-[10px] text-muted-foreground tracking-widest uppercase">Powering Business Growth</p>
+                      <p className="text-[10px] text-muted-foreground tracking-widest uppercase">Business Solutions Provider</p>
                     </div>
                   </div>
                   <div className="h-px bg-gradient-to-r from-primary/30 via-primary/10 to-transparent mt-4" />
                 </div>
-                 {navItems.map((item) => (
+                {navItems.map((item) => (
                   <button
-                     key={item.id}
-                     onClick={() => scrollTo(item.id)}
+                    key={item.id}
+                    onClick={() => scrollTo(item.id)}
                     className="text-left px-4 py-3.5 rounded-xl text-foreground/70 hover:bg-primary/8 hover:text-primary transition-all duration-300 text-sm font-medium tracking-wide group flex items-center gap-3"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/30 group-hover:bg-primary group-hover:shadow-[0_0_8px_hsl(199_89%_48%/0.5)] transition-all duration-300" />
-                     {item.label}
+                    {item.label}
                   </button>
                 ))}
               </div>
@@ -88,28 +87,27 @@ export function Header() {
               NextGen <span className="text-gradient">HQ Tech</span>
             </span>
             <span className="text-[9px] md:text-[10px] text-muted-foreground/70 tracking-[0.2em] uppercase mt-0.5">
-              Powering Business Growth
+              Business Solutions Provider
             </span>
           </div>
         </div>
 
-        {/* Right: Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1">
-           {navItems.map((item) => (
+          {navItems.map((item) => (
             <button
-               key={item.id}
-               onClick={() => scrollTo(item.id)}
+              key={item.id}
+              onClick={() => scrollTo(item.id)}
               className="text-sm text-muted-foreground hover:text-foreground px-3 py-2 rounded-lg hover:bg-secondary/50 transition-all duration-300 font-medium"
             >
-               {item.label}
+              {item.label}
             </button>
           ))}
           <Button
             size="sm"
-             onClick={() => window.open(whatsappUrl, "_blank", "noopener,noreferrer")}
+            onClick={() => window.open(whatsappUrl, "_blank", "noopener,noreferrer")}
             className="ml-2 bg-primary text-primary-foreground hover:bg-primary/80 glow-cyan rounded-xl font-semibold"
           >
-             Scale My Sales
+            Get Consultation
           </Button>
         </nav>
       </div>

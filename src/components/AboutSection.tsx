@@ -1,11 +1,11 @@
-import { BriefcaseBusiness, CircleDollarSign, Users, Waves } from "lucide-react";
+import { Award, Users, MessageSquare, PiggyBank } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const values = [
-  { icon: Users, title: "Dedicated Team", description: "An expert team of trained sales agents ready to represent your brand with authority." },
-  { icon: CircleDollarSign, title: "No Overheads", description: "No fixed salaries, no office overheads—just pure, measurable results tied to performance." },
-  { icon: BriefcaseBusiness, title: "Brand Ownership", description: "We learn your product, offers, objections, and tone so every call feels native to your business." },
-  { icon: Waves, title: "Conversion Pressure", description: "We hunt for conversions, handle follow-ups, and secure the cash with relentless consistency." },
+  { icon: Award, title: "Proven Track Record", description: "Consistent results across e-commerce sales closing and campaign data verification projects." },
+  { icon: Users, title: "Skillful Workforce", description: "Trained professionals who understand sales psychology and data integrity standards." },
+  { icon: MessageSquare, title: "Seamless Communication", description: "Real-time updates, daily reporting, and transparent collaboration with your team." },
+  { icon: PiggyBank, title: "Cost Optimization", description: "Eliminate fixed overheads—pay only for performance and verified results." },
 ];
 
 export function AboutSection() {
@@ -17,15 +17,15 @@ export function AboutSection() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div className={isInView ? "animate-fade-up" : "opacity-0"}>
-            <span className="section-badge">Agency Advantage</span>
+            <span className="section-badge">Why Choose NextGen</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-7">
-              A Dedicated Sales Force Ready to <span className="text-gradient">Scale Your Brand</span>
+              Built for Results. <span className="text-gradient">Trusted by Partners.</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-5">
-              We operate as your dedicated sales department. With our cutting-edge technology and elite sales agents, we double your revenue—without the burden of fixed salaries or office overheads.
+              NextGen HQ Tech is a leading business solutions provider specializing in helping companies grow through expert sales strategies and robust data verification services.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Nextgen HQ Tech is built for founders and operators who need sharper follow-up, stronger communication, and more closed deals without building an in-house call floor.
+              We are dedicated to providing transparency, efficiency, and high-performance solutions to our partners. Our unique approach combines revenue-driven sales closing with meticulous data integrity services.
             </p>
           </div>
 

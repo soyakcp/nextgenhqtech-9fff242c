@@ -2,10 +2,10 @@ import { useInView } from "@/hooks/useInView";
 import { useEffect, useState } from "react";
 
 const stats = [
+  { value: 100, suffix: "%", label: "Data Accuracy" },
   { value: 0, suffix: "", label: "Fixed Salaries" },
-  { value: 100, suffix: "%", label: "Call Transparency" },
   { value: 99, suffix: "%", label: "Client Satisfaction" },
-  { value: 1, suffix: "x", label: "Daily Reporting Rhythm" },
+  { value: 24, suffix: "/7", label: "Reporting Access" },
 ];
 
 function AnimatedCounter({ target, suffix, start }: { target: number; suffix: string; start: boolean }) {
@@ -47,12 +47,12 @@ export function StatsSection() {
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-purple-accent/5 rounded-full blur-[60px]" />
 
           <div className="relative z-10 text-center mb-12">
-            <span className="section-badge">Performance Model</span>
+            <span className="section-badge">Performance Metrics</span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Aggressive Execution. <span className="text-gradient">Measured Daily.</span>
+              Results That Speak. <span className="text-gradient">Numbers That Prove.</span>
             </h2>
             <p className="max-w-3xl mx-auto text-muted-foreground text-lg leading-relaxed">
-              Nextgen HQ Tech is engineered for operators who want closers, proof, and accountability—not bloated agency retainers.
+              NextGen HQ Tech delivers measurable outcomes across sales closing and data verification with full transparency.
             </p>
           </div>
 

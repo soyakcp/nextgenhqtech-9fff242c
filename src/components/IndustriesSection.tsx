@@ -1,31 +1,31 @@
-import { Building2, Landmark, PackageCheck, Route, ServerCog } from "lucide-react";
+import { ShoppingCart, Factory, FlaskConical, BarChart3, Megaphone } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const industries = [
   {
-    icon: PackageCheck,
+    icon: ShoppingCart,
     title: "E-commerce & Retail",
-    description: "Order confirmation, COD verification, repeat order recovery, and RTO reduction built for Bangladesh sellers.",
+    description: "Order confirmation, COD verification, pending lead conversion, and RTO reduction for online sellers.",
   },
   {
-    icon: Building2,
-    title: "Real Estate",
-    description: "Lead qualification, follow-ups, and appointment setting that moves prospects from interest to site visits.",
+    icon: Factory,
+    title: "FMCG & Tobacco",
+    description: "Campaign data verification, field activation data cleaning, and duplicate entry removal at scale.",
   },
   {
-    icon: ServerCog,
-    title: "IT & SaaS",
-    description: "Cold outreach and demo booking for software companies that need consistent, high-value conversations.",
+    icon: FlaskConical,
+    title: "Market Research",
+    description: "Data integrity services ensuring 100% verified entries for accurate research outcomes and reporting.",
   },
   {
-    icon: Route,
-    title: "Logistics",
-    description: "Outbound calling and account activation support to open revenue pipelines for delivery and supply brands.",
+    icon: Megaphone,
+    title: "Field Activation Agencies",
+    description: "End-to-end data verification for field campaigns—clean, accurate, and audit-ready data delivery.",
   },
   {
-    icon: Landmark,
-    title: "Financial Services",
-    description: "Trust-led lead nurturing for high-consideration services that demand clarity, consistency, and compliance.",
+    icon: BarChart3,
+    title: "Digital Marketing",
+    description: "Lead qualification, follow-up management, and sales closing support for digital campaign leads.",
   },
 ];
 
@@ -37,12 +37,12 @@ export function IndustriesSection() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(199_89%_48%_/_0.05)_0%,_transparent_60%)]" />
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-20">
-          <span className="section-badge">Industries We Scale</span>
+          <span className="section-badge">Industries We Serve</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-5">
-            Elite Closers for <span className="text-gradient">High-Intent Markets</span>
+            Trusted Across <span className="text-gradient">Multiple Industries</span>
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
-            From Bangladesh e-commerce to global B2B pipelines, we install the same aggressive sales discipline wherever revenue is being left on the table.
+            From e-commerce sales closing to FMCG campaign verification, we deliver precision and performance wherever data and revenue matter.
           </p>
         </div>
 

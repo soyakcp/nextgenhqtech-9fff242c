@@ -4,17 +4,17 @@ import logoImg from "@/assets/logo.png";
 const quickLinks = [
   { label: "Home", id: "home" },
   { label: "Services", id: "services" },
-  { label: "Agency Advantage", id: "about" },
-  { label: "Trust", id: "trust" },
+  { label: "Why Choose Us", id: "about" },
+  { label: "Process", id: "process" },
   { label: "Industries", id: "industries" },
   { label: "Contact", id: "contact" },
 ];
 
 const services = [
-  "Order Confirmation & RTO Reduction",
-  "Pending Lead Conversion",
-  "Cold Calling & Appointment Setting",
-  "Professional Sales Closers",
+  "E-commerce Sales Closing",
+  "Data Verification & Integrity",
+  "Campaign Data Cleaning",
+  "Lead Conversion & Follow-up",
 ];
 
 export function Footer() {
@@ -27,14 +27,13 @@ export function Footer() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_hsl(222_47%_3%)_0%,_transparent_70%)]" />
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Company */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <img src={logoImg} alt="NextGen HQ Tech" className="h-10 w-auto" />
               <span className="font-heading font-bold text-foreground text-lg">NextGen HQ Tech</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Nextgen HQ Tech: Your Professional Sales Force. Premium Results-Driven Sales Agency. International Standards. Local Expertise.
+              NextGen HQ Tech: Leading Business Solutions Provider. Expert Sales Closing & Data Verification Services with complete transparency.
             </p>
             <div className="flex gap-2">
               {[
@@ -55,7 +54,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="font-heading font-semibold text-foreground mb-5 text-sm tracking-wide">Quick Links</h4>
             <ul className="space-y-3">
@@ -72,7 +70,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
           <div>
             <h4 className="font-heading font-semibold text-foreground mb-5 text-sm tracking-wide">Services</h4>
             <ul className="space-y-3">
@@ -89,7 +86,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h4 className="font-heading font-semibold text-foreground mb-5 text-sm tracking-wide">Contact Info</h4>
             <div className="space-y-4">
@@ -107,7 +103,7 @@ export function Footer() {
               </div>
               <div className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                <span>Nextgen HQ Tech, Nabinagar, Savar, Dhaka-1344, Bangladesh</span>
+                <span>Nabinagar, Dhaka, Bangladesh</span>
               </div>
             </div>
           </div>
@@ -118,7 +114,7 @@ export function Footer() {
             © {new Date().getFullYear()} NextGen HQ Tech. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground/40">
-            Premium Results-Driven Sales Agency
+            Business Solutions Provider — Sales Closing & Data Verification
           </p>
         </div>
       </div>
