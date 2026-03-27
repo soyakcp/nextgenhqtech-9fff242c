@@ -13,7 +13,7 @@ const quickLinks = [
 const services = [
   "E-commerce Sales Closing",
   "Data Verification & Integrity",
-  "Campaign Data Cleaning",
+  "B2B Appointment Setting",
   "Lead Conversion & Follow-up",
 ];
 

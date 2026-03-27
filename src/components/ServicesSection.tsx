@@ -54,8 +54,8 @@ export function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {[serviceA, serviceB].map((service, i) => (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {[serviceA, serviceB, serviceC].map((service, i) => (
             <div
               key={service.title}
               className={`glass-card rounded-2xl p-8 lg:p-10 group cursor-default ${

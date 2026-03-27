@@ -9,7 +9,7 @@ const industries = [
   },
   {
     icon: Factory,
-    title: "FMCG & Tobacco",
+    title: "FMCG Brands",
     description: "Campaign data verification, field activation data cleaning, and duplicate entry removal at scale.",
   },
   {
