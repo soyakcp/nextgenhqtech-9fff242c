@@ -28,7 +28,7 @@ const testimonials = [
     company: "Prime Activation Agency",
     flag: "🇧🇩",
     country: "Bangladesh",
-    review: "As a field activation agency, data accuracy is everything. NextGen verified thousands of entries for our tobacco campaign flawlessly.",
+    review: "As a field activation agency, data accuracy is everything. NextGen verified thousands of entries for our FMCG activation campaign flawlessly.",
   },
   {
     name: "Farzana Akter",

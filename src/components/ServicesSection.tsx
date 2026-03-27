@@ -1,4 +1,4 @@
-import { TrendingUp, ShieldCheck, DollarSign, Eye, FileCheck, Search, BarChart3, CheckCircle } from "lucide-react";
+import { TrendingUp, ShieldCheck, DollarSign, Eye, FileCheck, Search, BarChart3, CheckCircle, CalendarCheck, Handshake, Target } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const serviceA = {
@@ -16,13 +16,25 @@ const serviceA = {
 const serviceB = {
   title: "Data Verification & Integrity",
   icon: ShieldCheck,
-  description: "We ensure 100% accuracy in your marketing campaigns. Our experts clean and verify collected data (perfect for tobacco, FMCG, and market research agencies) to remove fake or duplicate entries.",
+  description: "We ensure 100% accuracy in your marketing campaigns. Our experts clean and verify collected data (perfect for FMCG brands, activation agencies, and market research firms) to remove fake or duplicate entries.",
   keyPoints: [
     { icon: FileCheck, text: "Perfect for Field Activation Agencies" },
     { icon: Search, text: "Detailed Data Analysis & Reporting" },
     { icon: CheckCircle, text: "100% Verified Entries" },
   ],
   gradient: "from-purple-accent/20 to-purple-accent/5",
+};
+
+const serviceC = {
+  title: "B2B Appointment Setting",
+  icon: CalendarCheck,
+  description: "We connect your business with high-value clients by scheduling professional meetings and appointments with key decision-makers.",
+  keyPoints: [
+    { icon: Handshake, text: "Connect with Decision-Makers" },
+    { icon: Target, text: "Qualified Lead Meetings" },
+    { icon: BarChart3, text: "Pipeline Growth & Tracking" },
+  ],
+  gradient: "from-primary/20 to-purple-accent/5",
 };
 
 export function ServicesSection() {
@@ -35,15 +47,15 @@ export function ServicesSection() {
         <div className="text-center mb-20">
           <span className="section-badge">Core Services</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-5">
-            Two Powerful Solutions to <span className="text-gradient">Drive Your Growth</span>
+            Three Powerful Solutions to <span className="text-gradient">Drive Your Growth</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
             We specialize in revenue recovery through expert sales closing and data integrity services that protect your campaign investments.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {[serviceA, serviceB].map((service, i) => (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {[serviceA, serviceB, serviceC].map((service, i) => (
             <div
               key={service.title}
               className={`glass-card rounded-2xl p-8 lg:p-10 group cursor-default ${

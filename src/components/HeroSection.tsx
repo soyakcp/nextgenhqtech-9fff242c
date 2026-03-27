@@ -27,7 +27,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 md:px-6 pt-28 pb-20 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="animate-fade-up mb-6">
-            <span className="section-badge">Your Trusted BPO Partner</span>
+            <span className="section-badge">Maximize Your ROI with Next-Gen Sales, Verification & Lead Management</span>
           </div>
 
           <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-end">
