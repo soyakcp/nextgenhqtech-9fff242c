@@ -1,4 +1,4 @@
-import { TrendingUp, ShieldCheck, DollarSign, Eye, FileCheck, Search, BarChart3, CheckCircle } from "lucide-react";
+import { TrendingUp, ShieldCheck, DollarSign, Eye, FileCheck, Search, BarChart3, CheckCircle, CalendarCheck, Handshake, Target } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const serviceA = {
@@ -16,13 +16,25 @@ const serviceA = {
 const serviceB = {
   title: "Data Verification & Integrity",
   icon: ShieldCheck,
-  description: "We ensure 100% accuracy in your marketing campaigns. Our experts clean and verify collected data (perfect for tobacco, FMCG, and market research agencies) to remove fake or duplicate entries.",
+  description: "We ensure 100% accuracy in your marketing campaigns. Our experts clean and verify collected data (perfect for FMCG brands, activation agencies, and market research firms) to remove fake or duplicate entries.",
   keyPoints: [
     { icon: FileCheck, text: "Perfect for Field Activation Agencies" },
     { icon: Search, text: "Detailed Data Analysis & Reporting" },
     { icon: CheckCircle, text: "100% Verified Entries" },
   ],
   gradient: "from-purple-accent/20 to-purple-accent/5",
+};
+
+const serviceC = {
+  title: "B2B Appointment Setting",
+  icon: CalendarCheck,
+  description: "We connect your business with high-value clients by scheduling professional meetings and appointments with key decision-makers.",
+  keyPoints: [
+    { icon: Handshake, text: "Connect with Decision-Makers" },
+    { icon: Target, text: "Qualified Lead Meetings" },
+    { icon: BarChart3, text: "Pipeline Growth & Tracking" },
+  ],
+  gradient: "from-primary/20 to-purple-accent/5",
 };
 
 export function ServicesSection() {
